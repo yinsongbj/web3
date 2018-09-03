@@ -18,7 +18,9 @@ exports.doSign = function(req, res) {
 }
 
 exports.showWeb3 = function(req, res) {
-	res.render('user/web3');
+	var game_info;
+
+	res.render('user/web3', game_info);
 }
 exports.doWeb3 = function(req, res){	
 	// for post	
